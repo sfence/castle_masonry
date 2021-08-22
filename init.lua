@@ -39,52 +39,101 @@ end
 
 castle_masonry.materials = {}
 if read_setting("castle_masonry_stonewall", true) then
-	table.insert(castle_masonry.materials, {name="stonewall", desc=S("Stonewall"), tile="castle_stonewall.png", craft_material="castle_masonry:stonewall"})
+	table.insert(castle_masonry.materials, {name="stonewall", desc=S("Stonewall"), tile="castle_stonewall.png", craft_material="hades_castle_masonry:stonewall"})
 end
 if read_setting("castle_masonry_cobble", true) then
-	table.insert(castle_masonry.materials, {name="cobble", desc=S("Cobble"), tile="default_cobble.png", craft_material="default:cobble"})
+	table.insert(castle_masonry.materials, {name="cobble", desc=S("Cobble"), tile="default_cobble.png", craft_material="hades_core:cobble"})
 end
 if read_setting("castle_masonry_stonebrick", true) then
-	table.insert(castle_masonry.materials, {name="stonebrick", desc=S("Stonebrick"), tile="default_stone_brick.png", craft_material="default:stonebrick"})
+	table.insert(castle_masonry.materials, {name="stonebrick", desc=S("Stone Brick"), tile="default_stone_brick.png", craft_material="hades_core:stonebrick"})
+end
+if read_setting("castle_masonry_bakedcobble", true) then
+	table.insert(castle_masonry.materials, {name="cobble_baked", desc=S("Baked Cobble"), tile="hades_core_cobble_baked.png", craft_material="hades_core:cobble_baked"})
+end
+if read_setting("castle_masonry_bakedstonebrick", true) then
+	table.insert(castle_masonry.materials, {name="bakedstonebrick", desc=S("Baked Stone Brick"), tile="hades_core_stone_brick_baked.png", craft_material="hades_core:stonebrick_baked"})
 end
 if read_setting("castle_masonry_sandstonebrick", true) then
-	table.insert(castle_masonry.materials, {name="sandstonebrick", desc=S("Sandstone Brick"), tile="default_sandstone_brick.png", craft_material="default:sandstonebrick"})
+	table.insert(castle_masonry.materials, {name="sandstonebrick", desc=S("Sandstone Brick"), tile="default_sandstone_brick.png", craft_material="hades_core:sandstonebrick"})
 end
-if read_setting("castle_masonry_desertstonebrick", true) then
-	table.insert(castle_masonry.materials, {name="desertstonebrick", desc=S("Desert Stone Brick"), tile="default_desert_stone_brick.png", craft_material="default:desert_stonebrick"})
-end
-if read_setting("castle_masonry_desertsandstonebrick", true) then
-	table.insert(castle_masonry.materials, {name="desertsandstonebrick", desc=S("Desert Sandstone Brick"), tile="default_desert_sandstone_brick.png", craft_material="default:desert_sandstone_brick"})
-end
-if read_setting("castle_masonry_silversandstonebrick", true) then
-	table.insert(castle_masonry.materials, {name="silversandstonebrick", desc=S("Silver Sandstone Brick"), tile="default_silver_sandstone_brick.png", craft_material="default:silver_sandstone_brick"})
+if read_setting("castle_masonry_volcanicsandstonebrick", true) then
+	table.insert(castle_masonry.materials, {name="sandstonebrick", desc=S("Sandstone Brick"), tile="hades_core_sandstone_volcanic_brick.png", craft_material="hades_core:sandstone_volcanic_brick"})
 end
 if read_setting("castle_masonry_stone", true) then
-	table.insert(castle_masonry.materials, {name="stone", desc=S("Stone"), tile="default_stone.png", craft_material="default:stone"})
+	table.insert(castle_masonry.materials, {name="stone", desc=S("Stone"), tile="default_stone.png", craft_material="hades_core:stone"})
 end
 if read_setting("castle_masonry_sandstone", true) then
-	table.insert(castle_masonry.materials, {name="sandstone", desc=S("Sandstone"), tile="default_sandstone.png", craft_material="default:sandstone"})
+	table.insert(castle_masonry.materials, {name="sandstone", desc=S("Sandstone"), tile="default_sandstone.png", craft_material="hades_core:sandstone"})
 end
-if read_setting("castle_masonry_desertstone", true) then
-	table.insert(castle_masonry.materials, {name="desertstone", desc=S("Desert Stone"), tile="default_desert_stone.png", craft_material="default:desert_stone"})
+if read_setting("castle_masonry_chondrite", true) then
+	table.insert(castle_masonry.materials, {name="chondrite", desc=S("Chondrite"), tile="hades_core_chondrite.png", craft_material="hades_core:chondrite"})
 end
-if read_setting("castle_masonry_desertsandstone", true) then
-	table.insert(castle_masonry.materials, {name="desertsandstone", desc=S("Desert Sandstone"), tile="default_desert_sandstone.png", craft_material="default:desert_sandstone"})
+if read_setting("castle_masonry_chondritebrick", true) then
+	table.insert(castle_masonry.materials, {name="chondrite_brick", desc=S("Chondrite Brick"), tile="hades_core_chondrite_brick.png", craft_material="hades_core:chondrite_brick"})
 end
-if read_setting("castle_masonry_silversandstone", true) then
-	table.insert(castle_masonry.materials, {name="silversandstone", desc=S("Silver Sandstone"), tile="default_silver_sandstone.png", craft_material="default:silver_sandstone"})
+if read_setting("castle_masonry_tuff", true) then
+	table.insert(castle_masonry.materials, {name="tuff", desc=S("Tuff"), tile="hades_core_tuff.png", craft_material="hades_core:tuff"})
+end
+if read_setting("castle_masonry_tuffbrick", true) then
+	table.insert(castle_masonry.materials, {name="tuff_brick", desc=S("Tuff Brick"), tile="hades_core_tuff_brick.png", craft_material="hades_core:tuff_brick"})
+end
+if read_setting("castle_masonry_tuff_baked", true) then
+	table.insert(castle_masonry.materials, {name="tuff_baked", desc=S("Baked Tuff"), tile="hades_core_tuff_baked.png", craft_material="hades_core:tuff_baked"})
+end
+if read_setting("castle_masonry_tuff_bakedbrick", true) then
+	table.insert(castle_masonry.materials, {name="tuff_baked_brick", desc=S("Baked Tuff Brick"), tile="hades_core_tuff_baked_brick.png", craft_material="hades_core:tuff_baked_brick"})
+end
+if read_setting("castle_masonry_marble", true) then
+	table.insert(castle_masonry.materials, {name="marble", desc=S("Marble"), tile="hades_core_marble.png", craft_material="hades_core:marble"})
+end
+if read_setting("castle_masonry_marblebrick", true) then
+	table.insert(castle_masonry.materials, {name="marble_brick", desc=S("Marble Brick"), tile="hades_core_marble_brick.png", craft_material="hades_core:marble_brick"})
+end
+if read_setting("castle_masonry_essexite", true) then
+	table.insert(castle_masonry.materials, {name="essexite", desc=S("Essexite"), tile="hades_core_essexite.png", craft_material="hades_core:essexite"})
+end
+if read_setting("castle_masonry_essexitebrick", true) then
+	table.insert(castle_masonry.materials, {name="essexite_brick", desc=S("Essexite Brick"), tile="hades_core_essexite_brick.png", craft_material="hades_core:essexite_brick"})
+end
+if minetest.get_modpath("hades_default") then
+	--[[
+	if read_setting("castle_masonry_desertstonebrick", true) then
+		table.insert(castle_masonry.materials, {name="desertstonebrick", desc=S("Desert Stone Brick"), tile="default_desert_stone_brick.png", craft_material="hades_default:desert_stonebrick"})
+	end
+	--]]
+	if read_setting("castle_masonry_desertsandstonebrick", true) then
+		table.insert(castle_masonry.materials, {name="desertsandstonebrick", desc=S("Desert Sandstone Brick"), tile="default_desert_sandstone_brick.png", craft_material="hades_default:desert_sandstone_brick"})
+	end
+	if read_setting("castle_masonry_silversandstonebrick", true) then
+		table.insert(castle_masonry.materials, {name="silversandstonebrick", desc=S("Silver Sandstone Brick"), tile="default_silver_sandstone_brick.png", craft_material="hades_default:silver_sandstone_brick"})
+	end
+	if read_setting("castle_masonry_sandstone", true) then
+		table.insert(castle_masonry.materials, {name="sandstone", desc=S("Sandstone"), tile="default_sandstone.png", craft_material="hades_default:sandstone"})
+	end
+	--[[
+	if read_setting("castle_masonry_desertstone", true) then
+		table.insert(castle_masonry.materials, {name="desertstone", desc=S("Desert Stone"), tile="default_desert_stone.png", craft_material="hades_default:desert_stone"})
+	end--]]
+	if read_setting("castle_masonry_desertsandstone", true) then
+		table.insert(castle_masonry.materials, {name="desertsandstone", desc=S("Desert Sandstone"), tile="default_desert_sandstone.png", craft_material="hades_default:desert_sandstone"})
+	end
+	if read_setting("castle_masonry_silversandstone", true) then
+		table.insert(castle_masonry.materials, {name="silversandstone", desc=S("Silver Sandstone"), tile="default_silver_sandstone.png", craft_material="hades_default:silver_sandstone"})
+	end
 end
 if read_setting("castle_masonry_wood", false) then
-	table.insert(castle_masonry.materials, {name="wood", desc=S("Wood"), tile="default_wood.png", craft_material="group:wood", composition_material="default:wood"})
+	table.insert(castle_masonry.materials, {name="wood", desc=S("Wood"), tile="default_wood.png", craft_material="group:wood", composition_material="hades_trees:wood"})
 end
+--[[
 if read_setting("castle_masonry_ice", false) then
 	table.insert(castle_masonry.materials, {name="ice", desc=S("Ice"), tile="default_ice.png", craft_material="default:ice"})
 end
 if read_setting("castle_masonry_snow", false) then
 	table.insert(castle_masonry.materials, {name="snow", desc=S("Snow"), tile="default_snow.png", craft_material="default:snow"})
 end
+--]]
 if read_setting("castle_masonry_obsidianbrick", false) then
-	table.insert(castle_masonry.materials, {name="obsidianbrick", desc=S("Obsidian Brick"), tile="default_obsidian_brick.png", craft_material="default:obsidianbrick"})
+	table.insert(castle_masonry.materials, {name="obsidianbrick", desc=S("Obsidian Brick"), tile="default_obsidian_brick.png", craft_material="hades_core:obsidianbrick"})
 end
 
 castle_masonry.get_material_properties = function(material)
@@ -116,6 +165,7 @@ end
 
 if read_setting("castle_masonry_pillar", true) then
 	for _, material in pairs(castle_masonry.materials) do
+		print(material.name)
 		castle_masonry.register_pillar(material)
 	end
 end
@@ -145,7 +195,7 @@ for _, material in pairs(castle_masonry.materials) do
 
 	-- Arrowslit upgrade has special handling because the castle mod arrow slit is reversed relative to current build-from-inside standard
 	local lbm_def = {
-		name = "castle_masonry:arrowslit_flip_front_to_back"..material.name,
+		name = "hades_castle_masonry:arrowslit_flip_front_to_back"..material.name,
 		nodenames = {
 			"castle:arrowslit_"..material.name,
 			"castle:arrowslit_"..material.name.."_cross",

@@ -18,13 +18,13 @@ else
 end
 
 
-minetest.register_node("castle_masonry:pavement_brick", {
+minetest.register_node("hades_castle_masonry:pavement_brick", {
 	description = S("Paving Stone"),
 	drawtype = "normal",
 	tiles = {"castle_pavement_brick.png"},
 	groups = {cracky=2},
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults(),
+	sounds = hades_sounds.node_sound_stone_defaults(),
 })
 
 minetest.register_craft({
@@ -36,12 +36,12 @@ minetest.register_craft({
 })
 
 
-if minetest.get_modpath("moreblocks") then
+if minetest.get_modpath("hades_moreblocks") then
 	stairsplus:register_all("castle_masonry", "pavement_brick", "castle_masonry:pavement_brick", {
 		description = S("Pavement Brick"),
 		tiles = {"castle_pavement_brick.png"},
 		groups = {cracky=2, not_in_creative_inventory=1},
-		sounds = default.node_sound_stone_defaults(),
+		sounds = hades_sounds.node_sound_stone_defaults(),
 		sunlight_propagates = true,
 	})
 	stairsplus:register_alias_all("castle", "pavement_brick", "castle_masonry", "pavement_brick")
@@ -50,13 +50,15 @@ elseif minetest.get_modpath("stairs") then
 		{cracky=2},
 		{"castle_pavement_brick.png"},
 		S("Castle Pavement Stair"),
+		S("Outer Castle Pavement Stair"),
+		S("Inner Castle Pavement Stair"),
 		S("Castle Pavement Slab"),
-		default.node_sound_stone_defaults()
+		hades_sounds.node_sound_stone_defaults()
 	)
 end
 
 
-minetest.register_node("castle_masonry:roofslate", {
+minetest.register_node("hades_castle_masonry:roofslate", {
 	drawtype = "raillike",
 	description = S("Roof Slates"),
 	inventory_image = "castle_slate.png",
@@ -69,7 +71,7 @@ minetest.register_node("castle_masonry:roofslate", {
 		fixed = {-1/2, -1/2, -1/2, 1/2, -1/2+1/16, 1/2},
 	},
 	groups = {cracky=3,attached_node=1},
-	sounds = default.node_sound_glass_defaults(),
+	sounds = hades_sounds.node_sound_glass_defaults(),
 })
 
 local mod_building_blocks = minetest.get_modpath("building_blocks")
