@@ -30,8 +30,8 @@ minetest.register_node("hades_castle_masonry:pavement_brick", {
 minetest.register_craft({
 	output = "castle_masonry:pavement_brick 4",
 	recipe = {
-		{"default:stone", "default:cobble"},
-		{"default:cobble", "default:stone"},
+		{"hades_core:stone", "hades_core:cobble"},
+		{"hades_core:cobble", "hades_core:stone"},
 	}
 })
 
@@ -81,8 +81,8 @@ if mod_building_blocks then
 	minetest.register_craft({
 		output = "castle_masonry:roofslate 4",
 		recipe = {
-			{ "building_blocks:Tar" , "default:gravel" },
-			{ "default:gravel",       "building_blocks:Tar" }
+			{ "building_blocks:Tar" , "hades_core:gravel" },
+			{ "hades_core:gravel",       "building_blocks:Tar" }
 		}
 	})
 
@@ -117,7 +117,7 @@ if not (mod_building_blocks or mod_streets) then
 	minetest.register_craft({
 		type = "cooking",
 		output = "castle_masonry:roofslate",
-		recipe = "default:gravel",
+		recipe = "hades_core:gravel",
 	})
 
 end

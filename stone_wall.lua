@@ -24,7 +24,7 @@ minetest.register_node("hades_castle_masonry:stonewall", {
 	drawtype = "normal",
 	tiles = {"castle_stonewall.png"},
 	paramtype = "light",
-	drop = "castle_masonry:stonewall",
+	drop = "hades_castle_masonry:stonewall",
 	groups = {cracky=3},
 	sunlight_propagates = false,
 	sounds = hades_sounds.node_sound_stone_defaults(),
