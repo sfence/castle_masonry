@@ -28,7 +28,7 @@ minetest.register_node("hades_castle_masonry:pavement_brick", {
 })
 
 minetest.register_craft({
-	output = "castle_masonry:pavement_brick 4",
+	output = "hades_castle_masonry:pavement_brick 4",
 	recipe = {
 		{"hades_core:stone", "hades_core:cobble"},
 		{"hades_core:cobble", "hades_core:stone"},
@@ -37,7 +37,7 @@ minetest.register_craft({
 
 
 if minetest.get_modpath("hades_moreblocks") then
-	stairsplus:register_all("castle_masonry", "pavement_brick", "castle_masonry:pavement_brick", {
+	stairsplus:register_all("castle_masonry", "pavement_brick", "hades_castle_masonry:pavement_brick", {
 		description = S("Pavement Brick"),
 		tiles = {"castle_pavement_brick.png"},
 		groups = {cracky=2, not_in_creative_inventory=1},
@@ -46,7 +46,7 @@ if minetest.get_modpath("hades_moreblocks") then
 	})
 	stairsplus:register_alias_all("castle", "pavement_brick", "castle_masonry", "pavement_brick")
 elseif minetest.get_modpath("stairs") then
-	stairs.register_stair_and_slab("pavement_brick", "castle_masonry:pavement_brick",
+	stairs.register_stair_and_slab("pavement_brick", "hades_castle_masonry:pavement_brick",
 		{cracky=2},
 		{"castle_pavement_brick.png"},
 		S("Castle Pavement Stair"),
