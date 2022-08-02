@@ -106,7 +106,7 @@ if minetest.get_modpath("hades_moreblocks") then
 	stairsplus:register_alias_all("castle", "rubble", "hades_castle_masonry", "rubble")
 
 elseif minetest.get_modpath("stairs") then
-	stairs.register_stair_and_slab("stonewall", "hades_castle_masonry:stonewall",
+	hades_stairs.register_stair_and_slab("stonewall", "hades_castle_masonry:stonewall",
 		{cracky=3},
 		{"castle_stonewall.png"},
 		S("Castle Stonewall Stair"),
@@ -116,7 +116,7 @@ elseif minetest.get_modpath("stairs") then
 		hades_sounds.node_sound_stone_defaults()
 	)
 
-	stairs.register_stair_and_slab("rubble", "hades_castle_masonry:rubble",
+	hades_stairs.register_stair_and_slab("rubble", "hades_castle_masonry:rubble",
 		{cracky=3},
 		{"castle_rubble.png"},
 		S("Castle Rubble Stair"),
@@ -166,7 +166,7 @@ if minetest.get_modpath("hades_moreblocks") then
 	stairsplus:register_alias_all("castle", "dungeon_stone", "hades_castle_masonry", "dungeon_stone")
 	
 elseif minetest.get_modpath("stairs") then
-	stairs.register_stair_and_slab("dungeon_stone", "hades_castle_masonry:dungeon_stone",
+	hades_stairs.register_stair_and_slab("dungeon_stone", "hades_castle_masonry:dungeon_stone",
 		{cracky=2},
 		{"castle_dungeon_stone.png"},
 		S("Dungeon Stone Stair"),

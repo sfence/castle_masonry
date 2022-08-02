@@ -46,7 +46,7 @@ if minetest.get_modpath("hades_moreblocks") then
 	})
 	stairsplus:register_alias_all("castle", "pavement_brick", "castle_masonry", "pavement_brick")
 elseif minetest.get_modpath("stairs") then
-	stairs.register_stair_and_slab("pavement_brick", "hades_castle_masonry:pavement_brick",
+	hades_stairs.register_stair_and_slab("pavement_brick", "hades_castle_masonry:pavement_brick",
 		{cracky=2},
 		{"castle_pavement_brick.png"},
 		S("Castle Pavement Stair"),
